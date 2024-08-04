@@ -1,0 +1,14 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fragment_bg"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/header_shade_height"
+        android:scaleType="fitXY"
+        android:src="@drawable/img_header_bottom_shade" />
+
+</RelativeLayout>

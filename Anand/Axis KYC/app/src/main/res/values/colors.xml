@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFA451</color>
+    <color name="colorPrimaryDark">#F48118</color>
+    <color name="colorAccent">#FA9942</color>
+
+    <color name="app_header_bg">#96154d</color>
+
+    <color name="transparent">#00000000</color>
+
+    <color name="dim_screen_color">#33000000</color>
+
+    <color name="dark_blue">#355BB8</color>
+
+    <color name="pink">#98144e</color>
+    <color name="pink_press">#b13967</color>
+
+    <color name="blue">#6893FD</color>
+    <color name="light_blue">#f0f4ff</color>
+
+    <color name="orange">#FFA451</color>
+    <color name="light_orange">#FDF2E6</color>
+
+    <color name="green">#6EB5BB</color>
+    <color name="light_green">#f0f8f8</color>
+
+    <color name="other">#A6907C</color>
+    <color name="light_other">#D5D5D5</color>
+
+    <color name="black">#000000</color>
+
+    <!--used for view shade-->
+    <color name="segment_shade">#14000000</color>
+    <color name="row_cell_bg">#FDFEFF</color>
+
+    <color name="line_sep">#878787</color>
+
+    <color name="bottom_tabbar_bg">#ffffff</color>
+
+    <color name="white">#ffffff</color>
+    <color name="gray_bg">#3c3c3c</color>
+    <color name="app_bg">#ffffff</color>
+    <color name="fragment_bg">#ffffff</color>
+    <color name="red">#CE2029</color>
+    <color name="gray">#A1A4B2</color>
+    <color name="light_gray">#F6F7F7</color>
+    <color name="gray_alpha">#26A1A4B2</color>
+
+    <color name="blue_text_color">#6893FD</color>
+    <color name="default_text_color">#000000</color>
+    <color name="orange_text_color">#FFA451</color>
+    <color name="green_text_color">#20bc4e</color>
+    <color name="heading_text_color">#212529</color>
+    <color name="gray_text_color">#849198</color>
+    <color name="hint_text_color">#6F6E6E</color>
+    <color name="white_text_color">#ffffff</color>
+
+</resources>

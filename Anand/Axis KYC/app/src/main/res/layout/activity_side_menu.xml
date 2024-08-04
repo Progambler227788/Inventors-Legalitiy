@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/app_bg"
+    android:orientation="vertical"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <RelativeLayout
+        android:id="@+id/layout_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.drawerlayout.widget.DrawerLayout
+            android:id="@+id/drawer_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:id="@+id/layout_content"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <include layout="@layout/app_header" />
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <FrameLayout
+                        android:id="@+id/content_frame"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout_menu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="start"
+                android:background="@color/app_bg">
+
+                <ScrollView
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingTop="@dimen/top_navigation_bar_padding"
+                    android:scrollbars="none">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:paddingStart="@dimen/main_screen_padding"
+                            android:paddingEnd="@dimen/main_screen_padding">
+
+                            <TextView
+                                android:id="@+id/lbl_welcome"
+                                style="@style/bold_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="@dimen/header_height"
+                                android:singleLine="true"
+                                android:text="Welcome,"
+                                android:textColor="@color/default_text_color"
+                                android:textSize="@dimen/heading_text_size" />
+
+                            <TextView
+                                android:id="@+id/lbl_profile_name"
+                                style="@style/bold_text"
+                                android:layout_width="fill_parent"
+                                android:layout_height="wrap_content"
+                                android:text="Profile Name"
+                                android:textColor="@color/default_text_color"
+                                android:textSize="@dimen/default_text_size" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/layout_menu_items"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_marginTop="80dp"
+                            android:orientation="vertical" />
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentEnd="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_menu_open_shade" />
+
+            </RelativeLayout>
+
+        </androidx.drawerlayout.widget.DrawerLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

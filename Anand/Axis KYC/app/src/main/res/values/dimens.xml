@@ -1,0 +1,38 @@
+<resources>
+    <dimen name="main_screen_padding">12dp</dimen>
+    <dimen name="top_navigation_bar_padding">28dp</dimen> <!--28dp-->
+
+    <dimen name="header_shade_height">14dp</dimen>
+    <dimen name="header_height">65dp</dimen>
+    <dimen name="bottom_tabbar_height">75dp</dimen>
+
+    <dimen name="slide_menu_row_height">45dp</dimen>
+
+    <dimen name="edittext_height">55dp</dimen>
+
+    <dimen name="button_rounded_radius">24dp</dimen>
+
+    <dimen name="small_button_height">22dp</dimen>
+    <dimen name="medium_button_height">38dp</dimen>
+    <dimen name="large_button_height">80dp</dimen>
+    <dimen name="button_height">45dp</dimen>
+    <dimen name="button_width">320dp</dimen>
+    <dimen name="medium_button_width">260dp</dimen>
+
+    <dimen name="view_shade">3dp</dimen>
+
+    <dimen name="multi_line_spacing">2dp</dimen>
+
+    <dimen name="edittext_padding">7dp</dimen>
+
+    <dimen name="header_text_size">19dp</dimen>
+
+    <dimen name="heading_text_size">20dp</dimen>
+    <dimen name="sub_heading_text_size">17dp</dimen>
+    <dimen name="large_heading_text_size">25dp</dimen>
+    <dimen name="extra_large_heading_text_size">40dp</dimen>
+
+    <dimen name="default_text_size">14dp</dimen>
+    <dimen name="button_text_size">16dp</dimen>
+
+</resources>

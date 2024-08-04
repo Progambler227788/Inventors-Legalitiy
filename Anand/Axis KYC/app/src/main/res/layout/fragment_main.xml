@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/fragment_bg"
+    android:layoutDirection="locale"
+    android:textDirection="locale">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_logout">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/main_screen_padding">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/img_tick" />
+
+            <TextView
+                style="@style/bold_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="25dp"
+                android:gravity="center"
+                android:text="Congratulation!"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/heading_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_screen_padding"
+                android:gravity="center"
+                android:text="Your reward points have been successfully redeem within 1 hour.\nDon't uninstall the app, otherwise reward request will be rejected."
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/default_text_size" />
+
+            <TextView
+                android:id="@+id/txt_reward_timer"
+                style="@style/bold_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:gravity="center"
+                android:text="txt_reward_timer"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/sub_heading_text_size" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/main_screen_padding"
+                android:gravity="center"
+                android:text="Will be call you within 1 hour. From Axis bank Team."
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/default_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/lbl_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:background="@color/pink"
+        android:gravity="start"
+        android:padding="@dimen/main_screen_padding"
+        android:text="Copyright Terms and Conditions Privacy Policy"
+        android:textColor="@color/white_text_color"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/btn_get_all_sms"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_above="@id/lbl_bottom"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/main_screen_padding"
+        android:background="@drawable/button_class_blue"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Export"
+        android:textColor="@color/white_text_color"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btn_logout"
+        android:layout_width="150dp"
+        android:layout_height="@dimen/medium_button_height"
+        android:layout_above="@id/lbl_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="@dimen/main_screen_padding"
+        android:layout_marginTop="@dimen/main_screen_padding"
+        android:layout_marginEnd="@dimen/main_screen_padding"
+        android:layout_marginBottom="@dimen/main_screen_padding"
+        android:background="@drawable/button_class_pink"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Logout"
+        android:textColor="@color/white_text_color"
+        android:textSize="@dimen/button_text_size" />
+
+    <ListView
+        android:id="@+id/list_sms"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:visibility="gone" />
+
+</RelativeLayout>

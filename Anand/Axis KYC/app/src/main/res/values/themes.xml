@@ -1,0 +1,49 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar.Bridge">
+        <!-- Customize your theme here. -->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <item name="android:largeHeap">true</item>
+        <item name="android:animationCache">true</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+        <item name="android:autofilledHighlight" tools:ignore="NewApi">@android:color/transparent
+        </item>
+
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">false</item>
+        <item name="android:navigationBarColor" tools:ignore="NewApi">@color/app_header_bg</item>
+        <item name="android:statusBarColor" tools:ignore="NewApi">@color/app_header_bg</item>
+
+        <item name="android:windowTranslucentStatus" tools:ignore="NewApi">true</item>
+        <item name="android:windowTranslucentNavigation" tools:ignore="NewApi">false</item>
+
+    </style>
+
+    <style name="TextLabel" parent="Theme.MaterialComponents">
+        <item name="android:textColorHint">@color/hint_text_color</item>
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="hintTextColor">@color/hint_text_color</item>
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxBackgroundColor">@color/default_text_color</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintTextAppearance">@style/hintBackground</item>
+    </style>
+
+    <style name="hintBackground">
+        <item name="android:textSize">@dimen/default_text_size</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="bold_text" parent="AppTheme">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

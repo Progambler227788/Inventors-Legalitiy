@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/app_bg">
+
+    <include
+        android:id="@+id/layout_app_header"
+        layout="@layout/app_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout_app_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/main_screen_padding">
+
+            <TextView
+                android:id="@+id/lbl_login_welcome"
+                style="@style/bold_text"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="@dimen/main_screen_padding"
+                android:text="Login with Internet Banking"
+                android:textColor="@color/default_text_color"
+                android:textSize="@dimen/heading_text_size" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@drawable/rounded_bg"
+                android:layout_marginTop="40dp"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_mobile_number"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_class_pink"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Mobile No. / mPIN"
+                    android:textColor="@color/white_text_color"
+                    android:textSize="@dimen/default_text_size" />
+
+                <Button
+                    android:id="@+id/btn_login_customer_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_class_pink"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="Login ID / Customer ID"
+                    android:textColor="@color/white_text_color"
+                    android:textSize="@dimen/default_text_size" />
+
+            </LinearLayout>
+
+            <com.axiskyc.custom.views.CollapsedHintTextInputLayout
+                android:id="@+id/input_user_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:hint="Enter Customer ID / User ID"
+                android:padding="@dimen/view_shade"
+                card_view:hintAnimationEnabled="true"
+                card_view:hintTextAppearance="@style/TextLabel">
+
+                <EditText
+                    android:id="@+id/txt_user_id"
+                    style="@style/bold_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:background="@drawable/textfield"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="false"
+                    android:gravity="center|start"
+                    android:hint="Customer ID / User ID"
+                    android:paddingLeft="@dimen/edittext_padding"
+                    android:paddingTop="@dimen/edittext_padding"
+                    android:paddingRight="@dimen/edittext_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/default_text_color"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/default_text_size" />
+
+            </com.axiskyc.custom.views.CollapsedHintTextInputLayout>
+
+            <com.axiskyc.custom.views.CollapsedHintTextInputLayout
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_screen_padding"
+                android:hint="mPIN (Enter 6 digit mobile banking mPIN)"
+                android:padding="@dimen/view_shade"
+                card_view:hintAnimationEnabled="true"
+                card_view:hintTextAppearance="@style/TextLabel"
+                card_view:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/txt_password"
+                    style="@style/bold_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edittext_height"
+                    android:background="@drawable/textfield"
+                    android:focusableInTouchMode="true"
+                    android:focusedByDefault="false"
+                    android:gravity="center|start"
+                    android:hint="XXXXXX"
+                    android:inputType="textPassword"
+                    android:paddingLeft="@dimen/edittext_padding"
+                    android:paddingTop="@dimen/edittext_padding"
+                    android:paddingRight="@dimen/edittext_padding"
+                    android:singleLine="true"
+                    android:textColor="@color/default_text_color"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/default_text_size" />
+
+            </com.axiskyc.custom.views.CollapsedHintTextInputLayout>
+
+            <Button
+                android:id="@+id/btn_login"
+                android:layout_width="250dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/view_shade"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="@dimen/view_shade"
+                android:layout_marginBottom="@dimen/main_screen_padding"
+                android:background="@drawable/button_class_pink"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="Login"
+                android:textColor="@color/white_text_color"
+                android:textSize="@dimen/button_text_size" />
+
+            <TextView
+                android:id="@+id/btn_forgot_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/main_screen_padding"
+                android:singleLine="true"
+                android:text="Forgot Password"
+                android:textColor="@drawable/text_color_blue"
+                android:textSize="@dimen/button_text_size" />
+
+            <TextView
+                android:id="@+id/lbl_password_is_case_sensetive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="start"
+                android:layout_marginTop="@dimen/main_screen_padding"
+                android:singleLine="true"
+                android:text="Locked your Account? Enable Here"
+                android:textColor="@drawable/text_color_blue"
+                android:textSize="@dimen/default_text_size" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
